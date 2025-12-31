@@ -21,6 +21,10 @@
     <img src="https://img.shields.io/badge/discord-join-continue.svg?labelColor=191937&color=6F6FF7&logo=discord" style="height: 22px;" />
 </a>
 
+<a target="_blank" href="https://deepwiki.com/continuedev/continue" style="background:none">
+    <img src="https://deepwiki.com/badge.svg" style="height: 22px;" />
+</a>
+
 <p></p>
 
 <div align="center">
