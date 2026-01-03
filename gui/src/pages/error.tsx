@@ -34,7 +34,7 @@ const ErrorPage: React.FC = () => {
     <div className="flex flex-col items-center justify-center px-2 py-4 text-center sm:px-8">
       <h1 className="mb-4 text-3xl font-bold">Oops! Something went wrong</h1>
 
-      <code className="whitespace-wrap mx-2 mb-4 max-w-full break-words py-2">
+      <code className="whitespace-wrap mx-2 mb-4 max-w-full py-2 break-words">
         {error.statusText || error.message}
       </code>
 
@@ -57,7 +57,7 @@ const ErrorPage: React.FC = () => {
         Continue
       </Button>
 
-      <p className="mb-0 mt-6 text-lg">
+      <p className="mt-6 mb-0 text-lg">
         Report the issue on GitHub or Discord:
       </p>
 

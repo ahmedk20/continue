@@ -116,7 +116,7 @@ export function UserSetting(props: UserSettingProps) {
               min={props.min ?? 0}
               max={props.max ?? 100}
               disabled={disabled}
-              className="text-vsc-foreground flex-1 border-none bg-transparent px-2 py-1 text-right outline-none focus:outline-none focus:ring-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+              className="text-vsc-foreground flex-1 border-none bg-transparent px-2 py-1 text-right outline-none focus:ring-0 focus:outline-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
             />
           </div>
         );
@@ -168,7 +168,7 @@ export function UserSetting(props: UserSettingProps) {
                     onChange={(e) => props.onChange(e.target.value)}
                     placeholder={props.placeholder}
                     disabled={disabled}
-                    className="text-vsc-foreground flex-1 border-none bg-inherit px-1.5 py-1 outline-none ring-0 focus:border-none focus:outline-none focus:ring-0 disabled:cursor-not-allowed"
+                    className="text-vsc-foreground flex-1 border-none bg-inherit px-1.5 py-1 ring-0 outline-none focus:border-none focus:ring-0 focus:outline-none disabled:cursor-not-allowed"
                   />
                 </div>
                 {props.isDirty && (
@@ -198,7 +198,7 @@ export function UserSetting(props: UserSettingProps) {
               value={props.value}
               onChange={(e) => props.onChange(e.target.value)}
               disabled={disabled}
-              className="text-vsc-foreground flex-1 border-none bg-inherit px-1.5 py-1 outline-none ring-0 focus:border-none focus:outline-none focus:ring-0 disabled:cursor-not-allowed"
+              className="text-vsc-foreground flex-1 border-none bg-inherit px-1.5 py-1 ring-0 outline-none focus:border-none focus:ring-0 focus:outline-none disabled:cursor-not-allowed"
             />
           </div>
         );

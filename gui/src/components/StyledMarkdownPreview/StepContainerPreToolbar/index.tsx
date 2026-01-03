@@ -364,7 +364,7 @@ export function StepContainerPreToolbar({
               onClick={fileExists ? onClickFilename : undefined}
             />
           ) : (
-            <span className="text-lightgray ml-2 select-none capitalize">
+            <span className="text-lightgray ml-2 capitalize select-none">
               {language}
             </span>
           )}

@@ -26,7 +26,7 @@ function OllamaModelDownload({
 
   return (
     <div className="flex flex-col">
-      <p className="mb-0 mt-4 text-base font-semibold">{title}</p>
+      <p className="mt-4 mb-0 text-base font-semibold">{title}</p>
       {hasDownloaded ? (
         <OllamaCompletedStep text={command} />
       ) : (

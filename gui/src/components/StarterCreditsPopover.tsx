@@ -130,7 +130,7 @@ export default function StarterCreditsPopover({
               <GiftIcon className="h-4 w-4" />
               <h3 className="text-sm font-semibold">Starter credits</h3>
             </div>
-            <div className="absolute right-3 top-3 flex items-center gap-1">
+            <div className="absolute top-3 right-3 flex items-center gap-1">
               <ToolbarButtonWithTooltip
                 onClick={() => {
                   void onRefresh();

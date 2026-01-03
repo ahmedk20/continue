@@ -7,7 +7,7 @@ interface IndicatorBarProps {
 
 export function IndicatorBar({ text, isExpanded }: IndicatorBarProps) {
   return (
-    <div className="absolute left-0 right-0 top-0 z-10 flex h-8 items-start justify-center pt-1">
+    <div className="absolute top-0 right-0 left-0 z-10 flex h-8 items-start justify-center pt-1">
       <div className="border-border bg-editor text-description flex items-center gap-2 rounded border px-2 py-1 text-[11px] shadow-sm">
         <span>{text}</span>
         <ChevronDownIcon

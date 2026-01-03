@@ -312,7 +312,7 @@ function CollapsibleOutputContainer({
     <div className="relative">
       {/* Gradient overlay when collapsed */}
       {!isExpanded && (
-        <div className="from-editor pointer-events-none absolute left-0 right-0 top-0 z-[5] h-[100px] rounded-t-md bg-gradient-to-b to-transparent" />
+        <div className="from-editor pointer-events-none absolute top-0 right-0 left-0 z-[5] h-[100px] rounded-t-md bg-gradient-to-b to-transparent" />
       )}
 
       <div onClick={onToggle} className="cursor-pointer">
@@ -510,7 +510,7 @@ export function UnifiedTerminalCommand({
         {/* Status information */}
         {(statusMessage || isRunning) && (
           <div
-            className="text-description flex items-center px-2 pb-2 pt-2 text-xs"
+            className="text-description flex items-center px-2 pt-2 pb-2 text-xs"
             style={{
               borderTop:
                 "1px solid var(--vscode-commandCenter-inactiveBorder, #555555)",

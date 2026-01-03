@@ -165,7 +165,7 @@ function MCPServerPreview({
     return (
       <div>
         <div
-          className="mx-2 flex cursor-pointer items-center justify-between rounded hover:bg-gray-50 hover:bg-opacity-5"
+          className="hover:bg-opacity-5 mx-2 flex cursor-pointer items-center justify-between rounded hover:bg-gray-50"
           onClick={() => toggleSection(sectionKey)}
         >
           <div className="flex items-center gap-3">
@@ -190,7 +190,7 @@ function MCPServerPreview({
                   return (
                     <div
                       key={idx}
-                      className="text-description rounded bg-gray-50 bg-opacity-5 px-2 py-1 text-xs"
+                      className="text-description bg-opacity-5 rounded bg-gray-50 px-2 py-1 text-xs"
                     >
                       <code>{item.name}</code>
                       {item.description && (
@@ -203,7 +203,7 @@ function MCPServerPreview({
                 })}
               </div>
             ) : (
-              <div className="text-xs italic text-gray-500">
+              <div className="text-xs text-gray-500 italic">
                 No {title.toLowerCase()} available
               </div>
             )}

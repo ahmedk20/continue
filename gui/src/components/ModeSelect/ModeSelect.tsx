@@ -124,7 +124,7 @@ export function ModeSelect() {
             aria-hidden="true"
           />
         </ListboxButton>
-        <ListboxOptions className="min-w-32 max-w-48">
+        <ListboxOptions className="max-w-48 min-w-32">
           <ListboxOption value="chat">
             <div className="flex flex-row items-center gap-1.5">
               <ModeIcon mode="chat" />

@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme')
 const { varWithFallback, THEME_COLORS } = require("./src/styles/theme");
 
 module.exports = {

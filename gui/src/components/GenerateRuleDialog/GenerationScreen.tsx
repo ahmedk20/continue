@@ -141,7 +141,7 @@ export function GenerationScreen({
   const showNameSpinner = isGenerating && !formData.name && !isManualMode;
 
   return (
-    <div className="px-2 pb-2 pt-4 sm:px-4">
+    <div className="px-2 pt-4 pb-2 sm:px-4">
       <div>
         <div className="text-center">
           <h2 className="mb-0">Your rule</h2>
@@ -167,7 +167,7 @@ export function GenerationScreen({
                     {...register("name")}
                   />
                   {showNameSpinner && (
-                    <div className="absolute left-3 top-1/2 -translate-y-1/2">
+                    <div className="absolute top-1/2 left-3 -translate-y-1/2">
                       <Spinner />
                     </div>
                   )}

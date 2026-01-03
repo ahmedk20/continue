@@ -46,7 +46,7 @@ export function ToolPoliciesGroup({
   return (
     <Card className="flex flex-1 flex-col p-0">
       <div
-        className="flex cursor-pointer items-center justify-between gap-3 rounded px-2 py-2 hover:bg-gray-50 hover:bg-opacity-5"
+        className="hover:bg-opacity-5 flex cursor-pointer items-center justify-between gap-3 rounded px-2 py-2 hover:bg-gray-50"
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <div className="flex items-center gap-3">

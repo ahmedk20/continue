@@ -28,7 +28,7 @@ export function CollapsibleContainer({
       </div>
 
       {!isExpanded && (
-        <div className="from-editor absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t to-transparent">
+        <div className="from-editor absolute right-0 bottom-0 left-0 h-12 bg-gradient-to-t to-transparent">
           <div
             onClick={() => setIsExpanded(true)}
             className="group flex h-full cursor-pointer items-end justify-center pb-2"

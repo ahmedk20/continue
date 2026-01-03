@@ -33,7 +33,7 @@ export function InputScreen({
   };
 
   return (
-    <div className="px-2 pb-2 pt-4 sm:px-4">
+    <div className="px-2 pt-4 pb-2 sm:px-4">
       <div>
         <div className="text-center">
           <h2 className="mb-0">Generate Rule</h2>

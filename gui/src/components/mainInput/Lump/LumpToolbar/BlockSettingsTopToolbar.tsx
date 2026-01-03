@@ -89,7 +89,7 @@ export function BlockSettingsTopToolbar() {
                 }
               }}
               data-testid="block-settings-toolbar-icon-error"
-              className="relative flex cursor-pointer select-none items-center rounded-full px-1.5 py-1 sm:px-1.5"
+              className="relative flex cursor-pointer items-center rounded-full px-1.5 py-1 select-none sm:px-1.5"
             >
               <ExclamationTriangleIcon
                 className="text-warning h-[13px] w-[13px] flex-shrink-0"

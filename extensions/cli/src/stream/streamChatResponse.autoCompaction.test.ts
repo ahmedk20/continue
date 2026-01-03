@@ -103,9 +103,8 @@ describe("handleAutoCompaction", () => {
   });
 
   it("should perform auto-compaction when context limit is approaching", async () => {
-    const { shouldAutoCompact, getAutoCompactMessage } = await import(
-      "../util/tokenizer.js"
-    );
+    const { shouldAutoCompact, getAutoCompactMessage } =
+      await import("../util/tokenizer.js");
     const { compactChatHistory } = await import("../compaction.js");
     const { updateSessionHistory } = await import("../session.js");
 
@@ -174,9 +173,8 @@ describe("handleAutoCompaction", () => {
   });
 
   it("should handle compaction errors gracefully", async () => {
-    const { shouldAutoCompact, getAutoCompactMessage } = await import(
-      "../util/tokenizer.js"
-    );
+    const { shouldAutoCompact, getAutoCompactMessage } =
+      await import("../util/tokenizer.js");
     const { compactChatHistory } = await import("../compaction.js");
     const { logger } = await import("../util/logger.js");
 
@@ -217,9 +215,8 @@ describe("handleAutoCompaction", () => {
   });
 
   it("should not call system message callback in headless mode", async () => {
-    const { shouldAutoCompact, getAutoCompactMessage } = await import(
-      "../util/tokenizer.js"
-    );
+    const { shouldAutoCompact, getAutoCompactMessage } =
+      await import("../util/tokenizer.js");
     const { compactChatHistory } = await import("../compaction.js");
 
     vi.mocked(shouldAutoCompact).mockReturnValue(true);

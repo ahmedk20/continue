@@ -70,7 +70,7 @@ export function ToolPolicyItem(props: ToolPolicyItemProps) {
         fontSize,
       }}
     >
-      <div className="flex flex-col rounded px-2 py-2 hover:bg-gray-50 hover:bg-opacity-5">
+      <div className="hover:bg-opacity-5 flex flex-col rounded px-2 py-2 hover:bg-gray-50">
         <div className="flex flex-row items-start justify-between">
           <div
             className="flex flex-1 cursor-pointer flex-row items-start gap-1.5"
@@ -107,7 +107,7 @@ export function ToolPolicyItem(props: ToolPolicyItemProps) {
                     className="h-3 w-3 flex-shrink-0"
                   />
                 )}
-                <span className="line-clamp-1 break-all text-sm">
+                <span className="line-clamp-1 text-sm break-all">
                   {props.tool.originalFunctionName ?? props.tool.function.name}
                 </span>
               </div>

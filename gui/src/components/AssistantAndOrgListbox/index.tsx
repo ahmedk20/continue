@@ -190,7 +190,7 @@ export function AssistantAndOrgListbox({
 
             {shouldRenderOrgInfo && (
               <>
-                <Divider className="!mb-0.5 !mt-0" />
+                <Divider className="!mt-0 !mb-0.5" />
                 <div className="flex items-center justify-between px-1.5 py-1">
                   <span className="text-description text-xs font-medium">
                     Organizations
@@ -223,7 +223,7 @@ export function AssistantAndOrgListbox({
 
                 <OrganizationOptions onClose={close} />
 
-                <Divider className="!mb-0 mt-0.5" />
+                <Divider className="mt-0.5 !mb-0" />
               </>
             )}
 
@@ -242,7 +242,7 @@ export function AssistantAndOrgListbox({
                   <div className="flex w-full items-center">
                     <ArrowPathIcon
                       className={cn(
-                        "ml-1.5 mr-2 h-3.5 w-3.5 flex-shrink-0",
+                        "mr-2 ml-1.5 h-3.5 w-3.5 flex-shrink-0",
                         configLoading && "animate-spin-slow",
                       )}
                     />
@@ -261,7 +261,7 @@ export function AssistantAndOrgListbox({
                     className="text-description hover:bg-input my-0 w-full justify-start py-1.5 pl-1 text-left"
                   >
                     <div className="flex w-full items-center">
-                      <ArrowRightStartOnRectangleIcon className="ml-1.5 mr-2 h-3.5 w-3.5 flex-shrink-0" />
+                      <ArrowRightStartOnRectangleIcon className="mr-2 ml-1.5 h-3.5 w-3.5 flex-shrink-0" />
                       <span className="text-2xs">Log out</span>
                     </div>
                   </Button>
@@ -277,7 +277,7 @@ export function AssistantAndOrgListbox({
                     className="text-description hover:bg-input my-0 w-full justify-start py-1.5 pl-1 text-left"
                   >
                     <div className="flex w-full items-center">
-                      <ArrowRightStartOnRectangleIcon className="ml-1.5 mr-2 h-3.5 w-3.5 flex-shrink-0 rotate-180" />
+                      <ArrowRightStartOnRectangleIcon className="mr-2 ml-1.5 h-3.5 w-3.5 flex-shrink-0 rotate-180" />
                       <span className="text-2xs">Log in</span>
                     </div>
                   </Button>

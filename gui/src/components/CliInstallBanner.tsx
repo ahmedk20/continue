@@ -102,7 +102,7 @@ export function CliInstallBanner({
   }
 
   return (
-    <div className="border-t-vsc-input-border bg-vsc-background sticky bottom-0 border-t px-4 pb-4 pt-4">
+    <div className="border-t-vsc-input-border bg-vsc-background sticky bottom-0 border-t px-4 pt-4 pb-4">
       <Card className="relative">
         <CloseButton onClick={handleDismiss}>
           <XMarkIcon className="h-5 w-5 hover:brightness-125" />

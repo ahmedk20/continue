@@ -29,8 +29,8 @@ function ModelSelectionListbox({
 }: ModelSelectionListboxProps) {
   return (
     <Listbox value={selectedProvider} onChange={setSelectedProvider}>
-      <div className="relative mb-2 mt-1">
-        <ListboxButton className="bg-background border-border text-foreground hover:bg-input relative m-0 grid h-full w-full cursor-pointer grid-cols-[1fr_auto] items-center rounded-lg border border-solid py-2 pl-3 pr-10 text-left focus:outline-none">
+      <div className="relative mt-1 mb-2">
+        <ListboxButton className="bg-background border-border text-foreground hover:bg-input relative m-0 grid h-full w-full cursor-pointer grid-cols-[1fr_auto] items-center rounded-lg border border-solid py-2 pr-10 pl-3 text-left focus:outline-none">
           <span className="flex items-center">
             {window.vscMediaUrl && selectedProvider.icon && (
               <img
@@ -54,17 +54,17 @@ function ModelSelectionListbox({
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <ListboxOptions className="bg-input rounded-default absolute left-0 top-full z-10 mt-1 h-fit w-3/5 overflow-y-auto p-0 focus:outline-none [&]:!max-h-[30vh]">
+          <ListboxOptions className="bg-input rounded-default absolute top-full left-0 z-10 mt-1 h-fit w-3/5 overflow-y-auto p-0 focus:outline-none [&]:!max-h-[30vh]">
             {topOptions.length > 0 && (
               <div className="py-1">
-                <div className="text-description-muted px-3 py-1 text-xs font-medium uppercase tracking-wider">
+                <div className="text-description-muted px-3 py-1 text-xs font-medium tracking-wider uppercase">
                   Popular
                 </div>
                 {topOptions.map((option, index) => (
                   <ListboxOption
                     key={index}
                     className={({ selected }: { selected: boolean }) =>
-                      ` ${selected ? "bg-list-active" : "bg-input"} hover:bg-list-active hover:text-list-active-foreground relative flex cursor-default cursor-pointer select-none items-center justify-between gap-2 p-1.5 px-3 py-2 pr-4`
+                      ` ${selected ? "bg-list-active" : "bg-input"} hover:bg-list-active hover:text-list-active-foreground relative flex cursor-default cursor-pointer items-center justify-between gap-2 p-1.5 px-3 py-2 pr-4 select-none`
                     }
                     value={option}
                   >
@@ -98,14 +98,14 @@ function ModelSelectionListbox({
             )}
             {otherOptions.length > 0 && (
               <div className="py-1">
-                <div className="text-description-muted px-3 py-1 text-xs font-medium uppercase tracking-wider">
+                <div className="text-description-muted px-3 py-1 text-xs font-medium tracking-wider uppercase">
                   Additional providers
                 </div>
                 {otherOptions.map((option, index) => (
                   <ListboxOption
                     key={index}
                     className={({ selected }: { selected: boolean }) =>
-                      ` ${selected ? "bg-list-active" : "bg-input"} hover:bg-list-active hover:text-list-active-foreground relative flex cursor-default cursor-pointer select-none items-center justify-between gap-2 p-1.5 px-3 py-2 pr-4`
+                      ` ${selected ? "bg-list-active" : "bg-input"} hover:bg-list-active hover:text-list-active-foreground relative flex cursor-default cursor-pointer items-center justify-between gap-2 p-1.5 px-3 py-2 pr-4 select-none`
                     }
                     value={option}
                   >

@@ -37,20 +37,20 @@ export function DropdownButton({
         <div className="relative">
           <ToolTip content={addButtonTooltip}>
             <ListboxButton
-              className={`ring-offset-background focus-visible:ring-ring border-description hover:enabled:bg-input hover:enabled:text-foreground text-description inline-flex h-7 items-center justify-center gap-1 whitespace-nowrap rounded-md border border-solid bg-transparent px-1.5 py-1 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50`}
+              className={`ring-offset-background focus-visible:ring-ring border-description hover:enabled:bg-input hover:enabled:text-foreground text-description inline-flex h-7 items-center justify-center gap-1 rounded-md border border-solid bg-transparent px-1.5 py-1 text-xs font-medium whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50`}
               aria-label={addButtonTooltip}
             >
               <PlusIcon className="h-3 w-3" />
               <ChevronDownIcon className="h-3 w-3" />
             </ListboxButton>
           </ToolTip>
-          <ListboxOptions className="min-w-32 max-w-36" anchor="bottom end">
+          <ListboxOptions className="max-w-36 min-w-32" anchor="bottom end">
             {options.map((option) => (
               <ListboxOption
                 key={option.value}
                 value={option.value}
                 className={({ active }: { active: boolean }) =>
-                  `relative flex cursor-default select-none items-center gap-3 py-2 pl-4 pr-4 ${
+                  `relative flex cursor-default items-center gap-3 py-2 pr-4 pl-4 select-none ${
                     active
                       ? "bg-list-active text-list-active-foreground"
                       : "text-foreground"

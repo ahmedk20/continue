@@ -22,7 +22,7 @@ export function ApplyActions(props: ApplyActionsProps) {
   switch (props.applyState ? props.applyState.status : null) {
     case "streaming":
       return (
-        <div className="bg-badge flex select-none items-center rounded pl-2 pr-1">
+        <div className="bg-badge flex items-center rounded pr-1 pl-2 select-none">
           <span className="text-lightgray inline-flex items-center gap-2 text-center text-xs">
             Applying
             <Spinner />
@@ -31,7 +31,7 @@ export function ApplyActions(props: ApplyActionsProps) {
       );
     case "done":
       return (
-        <div className="bg-badge flex select-none items-center rounded sm:gap-1 md:px-1.5">
+        <div className="bg-badge flex items-center rounded select-none sm:gap-1 md:px-1.5">
           <span className="text-lightgray flex items-center text-center text-xs max-md:hidden">
             {`${props.applyState?.numDiffs === 1 ? "1 diff" : `${props.applyState?.numDiffs} diffs`}`}
           </span>

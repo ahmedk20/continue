@@ -27,7 +27,7 @@ export default function ConversationSummary(props: ConversationSummaryProps) {
   // Loading state - much simpler
   if (isLoading) {
     return (
-      <div className="mx-1.5 mb-4 mt-2">
+      <div className="mx-1.5 mt-2 mb-4">
         <div className="bg-vsc-input-background rounded-md shadow-sm">
           <div className="text-description flex items-center justify-start px-3 py-2 text-xs">
             <span>Generating conversation summary</span>
@@ -40,7 +40,7 @@ export default function ConversationSummary(props: ConversationSummaryProps) {
 
   // Normal state with content
   return (
-    <div className="mx-1.5 mb-4 mt-2">
+    <div className="mx-1.5 mt-2 mb-4">
       <div className="bg-vsc-input-background rounded-md shadow-sm">
         <div
           className="text-description flex cursor-pointer items-center gap-2 px-3 py-2 text-xs transition-colors duration-200 hover:brightness-105"
@@ -65,7 +65,7 @@ export default function ConversationSummary(props: ConversationSummaryProps) {
         {open && (
           <>
             <div className="border-border border-0 border-t border-solid"></div>
-            <div className="max-h-[400px] overflow-y-auto px-3 pb-3 pt-2">
+            <div className="max-h-[400px] overflow-y-auto px-3 pt-2 pb-3">
               <StyledMarkdownPreview
                 isRenderingInStepContainer
                 source={props.item.conversationSummary}

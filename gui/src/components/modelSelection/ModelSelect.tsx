@@ -279,7 +279,7 @@ function ModelSelect() {
 
           <div className="no-scrollbar max-h-[300px] overflow-y-auto">
             {isConfigLoading ? (
-              <div className="text-description flex items-center gap-2 px-2 pb-2 pt-1 text-xs">
+              <div className="text-description flex items-center gap-2 px-2 pt-1 pb-2 text-xs">
                 <ArrowPathIcon className="animate-spin-slow h-3 w-3" />
                 <span>Loading config</span>
               </div>

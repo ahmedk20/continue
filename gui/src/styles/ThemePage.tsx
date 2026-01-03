@@ -29,11 +29,11 @@ const ThemeTailwindClassExample = ({
 }) => {
   return (
     <>
-      <div className={`line-clamp-1 break-all px-2 text-right`}>
+      <div className={`line-clamp-1 px-2 text-right break-all`}>
         {colorName}
       </div>
       <div
-        className={`line-clamp-1 break-all p-1 text-[9px] ${isMissing ? "text-error" : ""}`}
+        className={`line-clamp-1 p-1 text-[9px] break-all ${isMissing ? "text-error" : ""}`}
         style={{
           backgroundColor: varWithFallback(
             colorName as keyof typeof THEME_COLORS,
@@ -43,7 +43,7 @@ const ThemeTailwindClassExample = ({
         {varNames.join(", ")}
       </div>
       <div
-        className={`line-clamp-1 break-all p-1 text-[9px]`}
+        className={`line-clamp-1 p-1 text-[9px] break-all`}
         style={{
           backgroundColor: defaultColor,
         }}
@@ -106,7 +106,7 @@ function ThemePage() {
         <span className="">←</span>
         Back to Chat
       </span>
-      <h2 className="mb-2 mt-0 p-0 text-center text-xl font-semibold">
+      <h2 className="mt-0 mb-2 p-0 text-center text-xl font-semibold">
         Theme Tester
       </h2>
       <div className="bg-background border-border grid grid-cols-1 gap-4 rounded-md border border-solid p-4 md:grid-cols-2">
@@ -188,7 +188,7 @@ function ThemePage() {
           <div className="bg-accent h-3 w-3" />
         </div>
       </div>
-      <h2 className="mb-2 mt-6 text-xl font-semibold">Manage Theme</h2>
+      <h2 className="mt-6 mb-2 text-xl font-semibold">Manage Theme</h2>
       <h2 className="mb-2 text-lg font-semibold">Missing Theme Colors</h2>
       {missingVars.length > 0 ? (
         <div className="flex flex-col gap-1">
@@ -205,7 +205,7 @@ function ThemePage() {
       {jetbrains ? (
         <Button onClick={clearThemeLocalCache}>Clear Theme Cache</Button>
       ) : null}
-      <h2 className="mb-2 mt-6 text-xl font-semibold">All Theme Colors</h2>
+      <h2 className="mt-6 mb-2 text-xl font-semibold">All Theme Colors</h2>
       <div className="grid grid-cols-3">
         <div className="p-1">
           <span className="font-bold">Theme Color</span>

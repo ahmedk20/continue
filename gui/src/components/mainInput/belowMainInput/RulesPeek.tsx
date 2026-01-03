@@ -36,14 +36,14 @@ export function RulesPeekItem({ rule }: RulesPeekItemProps) {
             {rule.name || "Agent rule"}
           </div>
 
-          <div className="min-w-0 flex-1 overflow-hidden truncate whitespace-nowrap text-xs text-gray-500">
+          <div className="min-w-0 flex-1 truncate overflow-hidden text-xs whitespace-nowrap text-gray-500">
             {isGlobal
               ? "Always applied"
               : `Pattern: ${typeof rule.globs === "string" ? rule.globs : Array.isArray(rule.globs) ? rule.globs.join(", ") : ""}`}
           </div>
         </div>
       </div>
-      <div className="mt-1 pl-6 pr-2 text-xs text-gray-500">
+      <div className="mt-1 pr-2 pl-6 text-xs text-gray-500">
         Source: {getRuleSourceDisplayName(rule)}
       </div>
     </div>

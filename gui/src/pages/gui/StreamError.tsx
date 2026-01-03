@@ -126,7 +126,7 @@ const StreamErrorDialog = ({ error }: StreamErrorProps) => {
   }
 
   let errorContent = (
-    <div className="mb-1 mt-3">
+    <div className="mt-3 mb-1">
       <div className="m-0 p-0">
         <p className="m-0 mb-2 p-0">
           There was an error handling the response from{" "}
@@ -239,7 +239,7 @@ const StreamErrorDialog = ({ error }: StreamErrorProps) => {
   }
 
   return (
-    <div className="flex flex-col gap-4 px-3 pb-3 pt-3">
+    <div className="flex flex-col gap-4 px-3 pt-3 pb-3">
       {/* Concise error title */}
       <h3 className="text-error m-0 p-0 text-lg font-medium">
         Error handling model response

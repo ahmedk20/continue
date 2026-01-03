@@ -7,7 +7,7 @@ export function OutOfCreditsDialog() {
   const ideMessenger = useContext(IdeMessengerContext);
 
   return (
-    <div className={`flex flex-col gap-1 px-3 pb-2 pt-3`}>
+    <div className={`flex flex-col gap-1 px-3 pt-3 pb-2`}>
       <p className="m-0 p-0 text-lg">You're out of credits!</p>
 
       <div className="mt-2 flex flex-col gap-1.5">

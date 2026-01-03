@@ -50,7 +50,7 @@ export function SelectedAssistantButton({
               {selectedProfile.iconUrl && (
                 <AssistantIcon assistant={selectedProfile} size={iconSize} />
               )}
-              <span className={`xs:line-clamp-1 hidden select-none text-xs`}>
+              <span className={`xs:line-clamp-1 hidden text-xs select-none`}>
                 {selectedProfile.title}
               </span>
             </>

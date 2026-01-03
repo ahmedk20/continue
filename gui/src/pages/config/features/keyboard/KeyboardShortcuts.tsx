@@ -13,8 +13,8 @@ function KeyboardShortcut(props: KeyboardShortcutProps) {
     <div
       className={`flex flex-col items-start p-2 sm:flex-row sm:items-center ${props.isEven ? "" : "bg-table-oddRow"}`}
     >
-      <div className="w-full flex-grow pb-1 pr-4 sm:w-auto sm:pb-0">
-        <span className="block break-words text-xs">{props.description}:</span>
+      <div className="w-full flex-grow pr-4 pb-1 sm:w-auto sm:pb-0">
+        <span className="block text-xs break-words">{props.description}:</span>
       </div>
       <div className="flex-shrink-0 whitespace-nowrap">
         <Shortcut>{props.shortcut}</Shortcut>

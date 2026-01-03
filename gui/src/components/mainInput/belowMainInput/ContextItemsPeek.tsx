@@ -123,7 +123,7 @@ export function ContextItemsPeekItem({
   return (
     <div
       onClick={() => openContextItem(contextItem, ideMessenger)}
-      className="mr-2 flex cursor-pointer flex-row items-center gap-1.5 whitespace-nowrap rounded px-1.5 py-1 text-xs hover:bg-white/10"
+      className="mr-2 flex cursor-pointer flex-row items-center gap-1.5 rounded px-1.5 py-1 text-xs whitespace-nowrap hover:bg-white/10"
       data-testid="context-items-peek-item"
     >
       {getContextItemIcon()}
